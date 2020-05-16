@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/todolist/todolist"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#000000",
+    "selectedColor":"#9E9E9E",
+    "backgroundColor": "#009688",
+    "list":[
+      {
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"image/index.png",
+      "selecctedIconPath":"image/index-active.png"
+    },
+    {
+      "pagePath":"pages/logs/logs",
+      "text":"日志",
+      "iconPath":"image/logs.png",
+      "selecctedIconPath":"image/logs-active.png"
+    },
+    {
+      "pagePath":"pages/todolist/todolist",
+      "text":"todoList",
+      "iconPath":"image/todolist.png",
+      "selecctedIconPath":"image/todolist-active.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
