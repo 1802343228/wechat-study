@@ -1,0 +1,14 @@
+<!--components/list/list.wxml-->
+<view class="wrapper">
+<block wx:for="{{list}}" wx:for-item="item" class="item-list">
+<view class="goods">
+<view>
+<text bindtap="buyTap" data-item="{{item}}">{{item.name}}</text>
+</view>
+<view>
+<text class="price">￥{{item.price}}</text>
+</view>
+<slot></slot>
+</view>
+</block>
+</view>

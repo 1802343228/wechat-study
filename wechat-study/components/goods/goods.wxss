@@ -1,0 +1,14 @@
+/* components/list/list.wxss */
+.wrapper {
+  margin: 10px;
+}
+.goods {
+  border:1rpx solid rgb(163, 160, 160);
+  padding: 20px;
+  margin: 10px;
+  height:40px;
+}
+.price {
+  color:rgb(133, 130, 130);
+  margin: 10px;
+}

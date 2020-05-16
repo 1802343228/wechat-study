@@ -50,5 +50,10 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  bandEnter:function(e) {
+    wx.navigateTo({
+      url: '/pages/'+e.currentTarget.dataset.item+"/"+e.currentTarget.dataset.item,
+    })
   }
 })

@@ -1,0 +1,10 @@
+<!--pages/shop/shop.wxml-->
+<view>
+<goods bindmyevent="onBuyGoods" list="{{goods}}">
+<view class="right">
+<text class="minus" bindtap="bindMinus">-</text>
+<input class="input" data-item="{{num}}" type="number" bindchange="changeTab" value="{{num}}"/>
+<text class="minus" bindtap="bindAdd">+</text>
+</view>
+</goods>
+</view>

@@ -2,7 +2,10 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/todolist/todolist"
+    "pages/todolist/todolist",
+    "pages/shop/shop",
+    "pages/detail/detail",
+    "pages/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -12,26 +15,20 @@
   },
   "tabBar":{
     "color":"#000000",
-    "selectedColor":"#9E9E9E",
+    "selectedColor":"#000000",
     "backgroundColor": "#009688",
     "list":[
       {
       "pagePath":"pages/index/index",
       "text":"首页",
-      "iconPath":"image/index.png",
+      "iconPath":"image/home.png",
       "selecctedIconPath":"image/index-active.png"
     },
     {
       "pagePath":"pages/logs/logs",
       "text":"日志",
-      "iconPath":"image/logs.png",
+      "iconPath":"image/log.png",
       "selecctedIconPath":"image/logs-active.png"
-    },
-    {
-      "pagePath":"pages/todolist/todolist",
-      "text":"todoList",
-      "iconPath":"image/todolist.png",
-      "selecctedIconPath":"image/todolist-active.png"
     }
   ]
   },

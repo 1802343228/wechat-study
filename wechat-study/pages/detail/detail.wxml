@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<view>
+<text>{{item.name}}详情页</text>
+<text>{{item.price}}</text>
+</view>

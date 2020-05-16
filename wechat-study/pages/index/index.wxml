@@ -7,7 +7,13 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
+  <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
+  
 </view>
+<view>
+  <button bindtap="bandEnter" data-item="shop">购物</button>
+  <button bindtap="bandEnter" data-item="todolist">学习清单</button>
+  <button bindtap="bandEnter" data-item="user">接口</button>
+  </view>

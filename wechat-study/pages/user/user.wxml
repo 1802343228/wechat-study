@@ -1,0 +1,12 @@
+<!--pages/user/user.wxml-->
+<view>
+<button bindtap="onRequest">请求接口信息</button>
+</view>
+<view wx:for="{{list}}" wx:key="list">
+<view>
+<text>{{item.author.name}}</text>
+<image class="tu" src='{{item.author.avatar}}'></image>
+<text>{{item.content}}</text>
+</view>
+</view>
+
