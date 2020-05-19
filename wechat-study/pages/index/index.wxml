@@ -16,4 +16,6 @@
   <button bindtap="bandEnter" data-item="shop">购物</button>
   <button bindtap="bandEnter" data-item="todolist">学习清单</button>
   <button bindtap="bandEnter" data-item="user">接口</button>
+  <button bindtap="bandEnter" data-item="text">练习</button>
+  <button bindtap="bandEnter" data-item="computer1">计算机</button>
   </view>

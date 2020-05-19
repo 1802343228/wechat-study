@@ -1,0 +1,31 @@
+/* pages/computer/computer.wxss */
+page {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.result {
+  flex: 1;
+  background-color: #f3f6fe;
+  position: relative;
+}
+.text {
+  position: absolute;
+  font-size: 30pt;
+  left:600rpx;
+  top:80rpx;
+}
+
+.btns {
+  flex: 1;
+  display: flex;
+  font-size: 17pt;
+  border-top:1rpx solid #ccc;
+  border-left:1rpx solid #ccc;
+  background-color: #f3f6fe;
+}
+
+.col-3 {
+  width: 200rpx;
+}

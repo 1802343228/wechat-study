@@ -1,0 +1,23 @@
+/* pages/computer1/computer1.wxss */
+input {
+  width: 95%;
+  height: 250rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.box {
+  display: flex;
+}
+button {
+  width: 20%;
+  height: 200rpx;
+  line-height: 200rpx;
+  background-color:#ccc;
+  color: white;
+}
+
+.color {
+  background-color: #ccc
+}

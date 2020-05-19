@@ -1,0 +1,38 @@
+<!--pages/computer/computer.wxml-->
+<view class="result">
+<textarea class="text" value="{{result}}" placeholder="{{result}}"></textarea>
+</view>
+<view class="btns">
+
+<view class="col-4">
+<button style="width:190rpx;height: 200rpx;" bindtap="resetBtn">C</button>
+<button style="width:190rpx;height: 200rpx;" data-item="7" bindtap="numBtn">7</button>
+<button style="width:190rpx;height: 200rpx;" data-item="4" bindtap="numBtn">4</button>
+<button style="width:190rpx;height: 200rpx;" data-item="1" bindtap="numBtn">1</button>
+<button style="width:190rpx;height: 200rpx;" data-item="0" bindtap="numBtn">0</button>
+</view>
+
+<view class="col-4">
+<button style="width:190rpx;height: 200rpx;" bindtap="delBtn">DEL</button>
+<button style="width:190rpx;height: 200rpx;" data-item="8" bindtap="numBtn">8</button>
+<button style="width:190rpx;height: 200rpx;" data-item="5" bindtap="numBtn">5</button>
+<button style="width:190rpx;height: 200rpx;" data-item="2" bindtap="numBtn">2</button>
+</view>
+
+<view class="col-4">
+<button style="width:190rpx;height: 200rpx;" bindtap="percentBtn">%</button>
+<button style="width:190rpx;height: 200rpx;" data-item="9" bindtap="numBtn">9</button>
+<button style="width:190rpx;height: 200rpx;" data-item="6" bindtap="numBtn">6</button>
+<button style="width:190rpx;height: 200rpx;" data-item="3" bindtap="numBtn">3</button>
+<button style="width:190rpx;height: 200rpx;" bindtap="dotBtn">.</button>
+</view>
+
+<view class="col-4">
+<button style="width:190rpx;height: 200rpx;" data-item="÷" bindtap="opBtn">÷</button>
+<button style="width:190rpx;height: 200rpx;" data-item="×" bindtap="opBtn">×</button>
+<button style="width:190rpx;height: 200rpx;" data-item="-" bindtap="opBtn">-</button>
+<button style="width:190rpx;height: 200rpx;" data-item="+" bindtap="opBtn">+</button>
+<button style="width:190rpx;height: 200rpx;">=</button>
+</view>
+
+</view>

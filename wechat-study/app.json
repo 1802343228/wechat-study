@@ -5,7 +5,11 @@
     "pages/todolist/todolist",
     "pages/shop/shop",
     "pages/detail/detail",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/text/text",
+    "pages/computer/computer",
+    "pages/computer1/computer1",
+    "pages/music/music"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -29,6 +33,12 @@
       "text":"日志",
       "iconPath":"image/log.png",
       "selecctedIconPath":"image/logs-active.png"
+    },
+    {
+      "pagePath":"pages/music/music",
+      "text":"音乐",
+      "iconPath":"image/music.png",
+      "selecctedIconPath":"image/music.png"
     }
   ]
   },

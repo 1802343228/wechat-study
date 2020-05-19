@@ -1,0 +1,48 @@
+<!--index.wxml-->
+  <view class="container">
+  <view class="nav">
+  <view class="nav-top">
+  <h5 style="position: relative;right:150px;color:white;">京东</h5>
+  <image style="position: relative;width:15px;height:15px;left:80px;" src="/image/sao.png"></image>
+  <image style="position: relative;width:20px;height:20px;top:3px;left:85px;" src="/image/info.png"></image>
+  <input class="nav-input" placeholder="明日方舟"></input>
+  </view>
+  </view>
+</view>
+<view>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item>  
+          <image src="{{item.url}}" class="image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+    </swiper>  
+    </view>
+
+    <view class="row">
+    <view class="flex">
+       <block wx:for="{{shop}}" wx:for-item="item">
+       <view class="col-5">
+       <view class="circle" style="background-color:{{item.color}};">
+       <text style="line-height:40px;">{{item.title}}</text>
+       </view>
+       <text style="font-size: small;">{{item.name}}</text>
+       </view>
+       </block>
+    </view>
+    </view>
+
+    <view class="goods">
+    <block wx:for="{{goods}}" wx:for-item="item">
+    <view class="goods-col">
+    <image src="{{item.img}}" style="height:100px;width:100px;"></image>
+    <view></view>
+    <text style="background-color:#F01E1E;font-size:15px;color:white;">{{item.wuliu}}</text>
+    <text>{{item.title}}</text>
+    <view></view>
+    <text style="color:red">{{item.price}}</text>
+    <text style="border:1px solid #CC5D5D;color:#E12929;background-color:#EAD5D5;border-radius:5px;">满减</text>
+    <text style="border:1px solid #B0ACAC;border-radius:10px;color:#736E6E;">看相似</text>
+    </view>
+    </block>
+    </view>

@@ -1,0 +1,83 @@
+<!--pages/text/text.wxml-->
+<view>
+<text>通过绑定事件的方式实现大小比较</text>
+<text>请输入第一个数字：</text>
+<input type="number" bindchange="num1change"/>
+<text>请输入第二个数字：</text>
+<input type="number" bindchange="num2change"/>
+<button bindtap="compare">比较</button>
+<text>比较结果：{{result}}</text>
+</view>
+
+<!-- <view>
+<text>第二种方式-dataset 在text组件上处理运算逻辑</text>
+<text>请输入第一个数字：</text>
+<input data-id="num11" type="number" bindchange="change1"/>
+<text>请输入第二个数字：</text>
+<input data-id="num22" type="number" bindchange="change2"/>
+<text>比较结果：{{num11 > num22?'第一个数大':(num11 < num22?'第二个数大':两数相等)}}</text>
+</view> -->
+
+<!-- <view>
+<text>通过条件渲染的方式比较大小</text>
+<text>请输入第一个数字：</text>
+<input type="number" bindchange="num1change"/>
+<text>请输入第二个数字：</text>
+<input type="number" bindchange="num2change"/>
+<button bindtap="compare">比较</button>
+<text wx:if="{{num1 >num2 }}">比较结果：第一个数大</text>
+<text wx:elif="{{num1 <num2 }}">比较结果：第二个数大</text>
+<text wx:else>比较结果：两数相等</text>
+</view> -->
+
+<!-- <view>
+<text>通过表单获取input的值比较结果</text>
+<form bindsubmit="fromCompare">
+<text>请输入第一个数字：</text>
+<input type="number" data-id="num1"/>
+<text>请输入第二个数字：</text>
+<input type="number" data-id="num2"/>
+<text>比较结果：{{result}}</text>
+</form>
+</view> -->
+<view></view>
+<view>
+<text>调查问卷</text>
+<form bindsubmit="submit">
+<view>
+<text>姓名：</text>
+<input type="text"/>
+</view>
+<view>
+<text>性别：</text>
+<radio-group bindchange="radioChange">
+<!-- <label wx:for="{{items}}">
+<radio value="item.name" checked="{{item.checked}}"/ >
+</label> -->
+<label>
+<radio value="男" checked="true"/>男
+</label>
+<view></view>
+<label>
+<radio value="女"/>女
+</label>
+</radio-group>
+</view>
+
+<view>
+<text>专业技能：</text>
+<checkbox-group bindchange="checkboxChange">
+<label wx:for="{{skill}}">
+<checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+<view></view>
+</label>
+</checkbox-group>
+</view>
+
+<view>
+<text>您的意见：</text>
+<textarea placeholder="form 中的 textarea" name="textarea"></textarea>
+</view>
+<button form-type="submit">提交</button>
+</form>
+</view>

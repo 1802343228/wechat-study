@@ -1,0 +1,41 @@
+<view class='content'>
+  <input value='{{calculation}}'></input>
+  <view class='box'>
+    <button class='color' bindtap="delBtn">DEL</button>
+    <button class='color' bindtap='emptyBtn'>Clear</button>
+    <button class='color'>%</button>
+    <button bindtap='addBtn' data-text='+' class='color'>+</button>
+  </view>
+
+  <view class='box'>
+    <button bindtap='addBtn' data-text='9'>9</button>
+    <button bindtap='addBtn' data-text='8'>8</button>
+    <button bindtap='addBtn' data-text='7'>7</button>
+    <button bindtap='addBtn' class='color' data-text='-'>-</button>
+  </view>
+
+  <view class='box'>
+    <button bindtap='addBtn' data-text='6'>6</button>
+    <button bindtap='addBtn' data-text='5'>5</button>
+    <button bindtap='addBtn' data-text='4'>4</button>
+    <button bindtap='addBtn' class='color' data-text='*'>*</button>
+  </view>
+
+  <view class='box'>
+    <button bindtap='addBtn' data-text='3'>3</button>
+    <button bindtap='addBtn' data-text='2'>2</button>
+    <button bindtap='addBtn' data-text='1'>1</button>
+    <button bindtap='addBtn' data-text='/' class='color'>÷</button>
+  </view>
+
+  <view class='box'>
+    <button bindtap='addBtn' data-text='0'>0</button>
+    <button bindtap='addBtn' data-text='.'>.</button>
+    <button></button>
+    <button class='color' bindtap='resBtn'>=</button>
+  </view>
+
+
+</view>
+
+
