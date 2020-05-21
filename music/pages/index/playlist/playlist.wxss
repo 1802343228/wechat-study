@@ -1,0 +1,20 @@
+/* pages/index/playlist/playlist.wxss */
+page{
+  background-color: rgb(23, 22, 22)
+}
+
+
+.container{
+  padding: 10px 20px;
+  align-content: center;
+}
+
+
+.text-content{
+  padding: 10px;
+  align-content: center;
+  width: 100%;
+  border-bottom: 1rpx solid rgb(235, 228, 228);
+  background-color: rgb(56, 53, 53);
+  color:#fff;
+}

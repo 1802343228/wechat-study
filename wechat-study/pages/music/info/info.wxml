@@ -1,0 +1,4 @@
+<!--pages/music/info/info.wxml-->
+<view style="background:#ddd;color:#000;height:100%">
+play
+</view>

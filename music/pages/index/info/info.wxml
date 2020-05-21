@@ -1,0 +1,72 @@
+<!--pages/index/info/info.wxml-->
+
+<view class="container">
+  <!-- 歌名和演唱者 -->
+  <view class="header">
+    <view>{{playlist[playIndex].songName}}</view>
+    <view class="author">{{playlist[playIndex].singer}}</view>
+  </view>
+  <view class="content-play-cover">
+  <image src="{{playlist[playIndex].thumbnail}}" style="animation-play-state:{{state}}"></image>
+  </view>
+  <!-- 歌词部分，可滚动 -->
+  <scroll-view class="middle" scroll-y="true">
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>末尾</view>
+
+  </scroll-view>
+
+  <!-- 底部进度条 -->
+  <view class="footer">
+
+    <view class="progress-bar">
+      <view>{{currentTime}}</view>
+     <view class="progress-line"  bindtap="seek">
+        <view class="progress-bg"></view>
+        <view class="progress-red" style="width:{{progressPercent}}%;"></view>
+        <view class="progress-dot" style="left:calc({{progressPercent}}% - 5px)">
+          <image src="../../../image/enter.png" style="width:5px;height:5px;" class="iconfont iconyuandian1"></image>
+        </view>
+      </view>
+      <view>{{playlist[playIndex].duration}}</view>
+    </view>
+
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="btn-group">
+    <view class="prev">
+      <!-- <icon class="iconfont iconshangyishou"></icon> -->
+      <image style="width:50px;height:50px;" src="../../../image/more.png"></image>
+    </view>
+    <view class="play">
+      <!-- <icon class="iconfont iconweibiaoti--"></icon> -->
+      <image wx:if="{{state=='paused'}}" style="width:50px;height:50px;" src="../../../image/enter.png" bindtap="play"></image>
+      <image wx:else class="player-img" style="width:50px;height:50px;" wx:else src="/image/ing.png" bindtap="pause" />
+    </view>
+    <view class="next">
+      <!-- <icon class="iconfont iconxiayishou"></icon> -->
+      <image style="width:50px;height:50px;" src="../../../image/next.png" bindtap="next"></image>
+    </view>
+  </view>
+<!-- <audio src="{{src}}" id="myAudio" > -->
+</view>
+

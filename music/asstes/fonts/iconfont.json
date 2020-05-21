@@ -1,0 +1,30 @@
+{
+  "id": "1831987",
+  "name": "音乐",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4775356",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "11690688",
+      "name": "播放",
+      "font_class": "ziyuan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "12754056",
+      "name": "暂停",
+      "font_class": "zanting_huaban",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    }
+  ]
+}

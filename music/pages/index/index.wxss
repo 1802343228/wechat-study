@@ -1,0 +1,85 @@
+/**index.wxss**/
+page {
+  display: flex;
+  flex-direction: column;
+  background: #17181a;
+  color: #ccc;
+  height: 100%;
+}
+
+.tab-item {
+  width: 100%;
+  border-bottom: 2rpx solid rgb(22, 20, 20);
+  text-align: center;
+  line-height:80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 20%;
+  color: #777;
+}
+.on {
+  color: #80c3bd;
+  border-bottom: 5rpx solid #80c3bd;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.content-info-portal {
+  display: flex;
+}
+.content-info-block {
+  margin:23px;
+}
+
+.list-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.list-title {
+  margin: 10px;
+}
+
+.list-item {
+  margin: 8px;
+}
+.list-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  background: #222;
+  border-top: 1px solid #252525;
+  height: 112px;
+}
+
+.player-img {
+  height:30px;
+  width: 30px;
+}
+.player-cover {
+  width: 50px;
+  height: 50px;
+}
+.player-info{
+  /* margin-left: 50px; */
+  position: fixed;
+  right: 3px;
+  top:460px;
+  bottom: 40px;
+}
+

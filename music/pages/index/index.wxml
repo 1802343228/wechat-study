@@ -1,0 +1,105 @@
+<!--index.wxml-->
+<!-- 标签页标题 -->
+<view class="tab">
+	<view class="tab-item">
+		<view class="swiper-tab-list {{tab == 0? 'on' : ''}}" data-item="0" bindtap="swichNav">音乐推荐</view>
+		<view class="swiper-tab-list {{tab == 1? 'on' : ''}}" data-item="1" bindtap="swichNav">播放器</view>
+		<view class="swiper-tab-list {{tab == 2? 'on' : ''}}" data-item="2" bindtap="swichNav">播放列表</view>
+	</view>
+	<swiper current="{{tab}}" bindchange="swichNav" style="height:100%;">
+	</swiper>
+</view>
+
+<!-- 内容区域 -->
+<view class="content">
+	<swiper class="content-info-slide" indicator-color="rgba(255,255,255,.5)" indicator-active-color="#fff" indicator-dots circular autoplay>
+		<block wx:for="{{movies}}" wx:for-index="index">
+			<swiper-item>
+				<image src="{{item.url}}" class="image" mode="aspectFill"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<view class="content-info-portal">
+		<view class="content-info-block">
+			<image class="icon" src="/image/FM.png" />
+			<view></view>
+			<text>私人FM</text>
+		</view>
+
+		<view class="content-info-block">
+			<image class="icon" src="/image/ball.png" />
+			<view></view>
+			<text>歌曲推荐</text>
+		</view>
+
+		<view class="content-info-block">
+			<image class="icon" src="/image/bang.png" bindtap="changeList"/>
+			<view></view>
+			<text>新歌榜</text>
+		</view>
+	</view>
+
+	<view class="content-info-list">
+		<view class="list-title">推荐歌曲</view>
+		<view class="list-inner">
+
+			<view class="list-item">
+				<image class="list-image" src="/image/img1.jpg"></image>
+				<view></view>
+				<text>グレイ</text>
+			</view>
+
+			<view class="list-item">
+				<image class="list-image" src="/image/img2.jpg"></image>
+				<view></view>
+				<text>TRUE</text>
+			</view>
+
+			<view class="list-item">
+				<image class="list-image" src="/image/img3.jpg"></image>
+				<view></view>
+				<text>Free</text>
+			</view>
+
+			<view class="list-item">
+				<image class="list-image" src="/image/img4.jpg"></image>
+				<view></view>
+				<text>Lazy</text>
+			</view>
+
+			<view class="list-item">
+				<image class="list-image" src="/image/img5.jpg"></image>
+				<view></view>
+				<text>エイミー</text>
+			</view>
+
+			<view class="list-item">
+				<image class="list-image" src="/image/img6.jpg"></image>
+				<view></view>
+				<text>Sakura</text>
+			</view>
+
+		</view>
+	</view>
+
+
+	<!-- <scroll-view class="content-info" scroll-y>
+		<view style="background:#eee;height:1000px;">
+		</view>
+		<view>已到达底部</view>
+	</scroll-view> -->
+</view>
+
+<!-- 底部播放器 -->
+<view class="player">
+	<image class="player-cover" src="{{playlist[playIndex].thumbnail}}"  bindtap="audioInfo" /> 
+  <text bindtap="audioInfo">{{playlist[playIndex].songName}}</text>
+  <!-- <audio src="{{playlist[playIndex].src}}" poster="{{playlist[playIndex].thumbnail}}" name="{{playlist[playIndex].songName}}" author="{{playlist[playIndex].singer}}" action="{{state}}" bindplay="audioPlayed" bindtap="audioInfo" bindtimeupdate="audioTimeUpdated" controls></audio> -->
+	<view class="player-info">
+  <image class="player-img" src="/image/more.png"></image>
+  <image class="player-img" wx:if="{{state=='paused'}}" src="/image/enter.png"  bindtap="play"/>
+  <image class="player-img" wx:else src="/image/ing.png" bindtap="pause" />
+  <image class="player-img" src="/image/next.png" bindtap="next" />
+	</view>
+</view>
