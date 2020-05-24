@@ -1,0 +1,70 @@
+/**index.wxss**/
+.container {
+  width: 100%;
+  height:100%
+}
+
+.smart-swiper-image {
+  width: 100%;
+  height: 100%;
+}
+.smart-swiper-view{
+  width: 100%;
+  height: 100%;
+}
+.smart-image-small {
+  height: 50px;
+  width: 50px;
+}
+
+.smart-function-col4{
+  display: flex;
+}
+.smart-function-block {
+  border:1px solid gainsboro;
+  border-left: none;
+  width:25%;
+}
+.smart-function-center {
+  text-align: center;
+}
+
+.smart-function-btn {
+  border:1px solid gainsboro;
+  width: 22%;
+  margin-top: 5px;
+}
+.smart-today-course-col2 {
+  border:1px solid gainsboro;
+  display: flex;
+}
+
+.smart-small-text {
+  font-size: small;
+}
+.smart-big-text {
+  font-size: 14pt;
+}
+.smart-today-course-border {
+  border:1px solid gainsboro;
+  width:35%;
+  margin:10px;
+}
+
+.smart-hot-info-border{
+  border:1px solid gainsboro;
+  display: flex;
+  padding: 10px;
+  }
+.smart-image-index {
+  height: 60px;
+  width: 90px;
+}
+.smart-hot-info-content {
+  width:70%;
+  font-size: 11pt;
+}
+.smart-hot-info-data {
+  font-size: 9pt;
+  margin-left:100px;
+}

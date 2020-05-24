@@ -1,7 +1,9 @@
-/* pages/index/playlist/playlist.wxss */
-page{
+/* pages/tel/tel.wxss */
+
+@import "../../utils/wxaSortPicker/wxaSortPicker.wxss";
+/* page{
   background-color: rgb(23, 22, 22)
-}
+} */
 
 
 .container{

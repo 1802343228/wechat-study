@@ -1,0 +1,13 @@
+<!--pages/tel/tel.wxml-->
+<import src="../../utils/wxaSortPicker/wxaSortPicker.wxml"/> 
+<template is="wxaSortPicker" data="{{wxaSortPickerData,dataType}}"/>
+<!-- <view class='container'>
+  <scroll-view class="content-playlist" scroll-y>
+  <input placeholder="请输入歌单名.." bindinput="bindSearch"/>
+  <button bindtap="search">搜索</button>
+<block wx:for="{{telList}}" wx:key="index" class="playlist-item">
+    <view class='text-content' bindtap="bindDel" data-item="{{item.song_list_name}}">{{item.songListName}}
+    </view> 
+  </block>
+  </scroll-view>
+</view> -->

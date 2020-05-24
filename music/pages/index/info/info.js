@@ -206,4 +206,9 @@ Page({
     this.data.playlist[index].duration = this.data.audioCtx.duration
     this.data.audioCtx.play()
   },
+  sliderChange:function(e) {
+    var second = e.detail.value*
+    this.audioCtx.duration/100
+    this.audioCtx.seek(second)
+  }
 })

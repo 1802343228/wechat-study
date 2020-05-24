@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/info/info",
+    "pages/tel/tel",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/course/course"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "主页",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "asstes/icon/star.png",
+        "selecctedIconPath": "asstes/icon/star.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "资讯",
+        "iconPath": "asstes/icon/star.png",
+        "selecctedIconPath": "asstes/icon/star.png"
+      },
+      {
+        "pagePath": "pages/tel/tel",
+        "text": "通讯录",
+        "iconPath": "asstes/icon/star.png",
+        "selecctedIconPath": "asstes/icon/star.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "asstes/icon/star.png",
+        "selecctedIconPath": "asstes/icon/star.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人",
+        "iconPath": "asstes/icon/star.png",
+        "selecctedIconPath": "asstes/icon/star.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

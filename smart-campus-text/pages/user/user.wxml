@@ -1,0 +1,35 @@
+<!--pages/user/user.wxml-->
+<view class="panel__table__view">
+  <view class="panel__table__view__cell firstchild cell_access autoheight" catchtap="changeAvatar">
+      <view class="panel__table__cell__hd">
+        更改头像
+      </view>
+      <view class="panel__table__cell__bd">
+        <view class="person__top__avatar">
+          <image src="{{myInfo.avatar}}" />
+        </view>
+      </view>
+      <view class="panel__table__cell__ft">
+      </view>
+  </view>
+
+  <view class="panel__table__view__cell">
+      <view class="panel__table__cell__hd">
+        用户名
+      </view>
+      <view class="panel__table__cell__bd justify">
+        {{myInfo.name}}
+      </view>
+      <view class="panel__table__cell__ft">
+      </view>
+  </view>
+
+
+
+ 
+  
+</view>
+
+<view>
+<button bindtap="bindLogin">退出登录</button>
+</view>

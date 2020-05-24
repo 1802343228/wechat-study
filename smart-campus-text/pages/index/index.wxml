@@ -1,0 +1,47 @@
+<!--index.wxml-->
+
+<!-- 轮播图 -->
+<view class="smart-swiper-view">
+	<swiper indicator-color="rgba(255,255,255,.5)" indicator-active-color="#fff" indicator-dots cricular autoplay>
+		<block wx:for="{{image}}" wx:for-index="index">
+			<swiper-item>
+				<image src="{{item.img}}" class="smart-swiper-image" mode="aspectFill"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+
+<view class="smart-function">
+<view class="smart-function-btn">功能模块</view>
+	<view class="smart-function-col4">
+		<view class="smart-function-block" wx:for="{{functionBlock}}" wx:for-item="item">
+      <view class="smart-function-center">
+			<image class="smart-image-small" src="{{item.img}}"></image>
+			<view>{{item.name}}</view>
+      </view>
+		</view>
+	</view>
+
+</view>
+
+<view class="smart-today-course">
+<view class="smart-function-btn" bindtap="changecourse">今日课程</view>
+<view class="smart-today-course-col2">
+<view class="smart-today-course-border" wx:for="{{todayCourse}}" wx:for-item="item">
+<view class="smart-big-text">{{item.courseName}}</view>
+<view class="smart-small-text">{{item.courseTime}}</view>
+<view class="smart-small-text">{{item.coursePlace}}</view>
+</view>
+</view>
+</view>
+
+<view class="smart-hot-info">
+<view class="smart-function-btn">热门资讯</view>
+<view class="smart-hot-info-border" wx:for="{{hotInfo}}" wx:info-item="item">
+<image class="smart-image-index" src="{{item.img}}"></image>
+<view class="smart-hot-info-content">{{item.title}}
+<text class="smart-hot-info-data">{{item.createTime}}</text>
+</view>
+</view>
+</view>
+

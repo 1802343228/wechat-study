@@ -1,0 +1,35 @@
+<scroll-view class="layout" bindscroll='layoutScroll' scroll-y="true" >
+  <view class='banner'>
+    <text>我是一个banner</text>
+  </view>
+  <!-- 导航开始 -->
+  <view class='nav clearfix {{navFixed?"positionFixed":""}}'>
+    <view class='nav_row'>
+     <text>导航1</text> 
+    </view>
+    <view class='nav_row'>
+     <text>导航2</text> 
+    </view>
+    <view class='nav_row'>
+     <text>导航3</text> 
+    </view>
+    <view class='nav_row'>
+     <text>导航4</text> 
+    </view>
+  </view>
+  <!-- 导航结束  -->
+  <!-- 内容开始 -->
+  <view class='content content1'>
+    <text>我是内容1</text>
+  </view>
+  <view class='content content2'>
+    <text>我是内容2</text>
+  </view>
+  <view class='content content3'>
+    <text>我是内容3</text>
+  </view>
+  <view class='content content4'>
+    <text>我是内容4</text>
+  </view>
+  <!-- 内容结束 -->
+</scroll-view>

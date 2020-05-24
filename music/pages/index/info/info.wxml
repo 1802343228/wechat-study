@@ -46,7 +46,9 @@
           <image src="../../../image/enter.png" style="width:5px;height:5px;" class="iconfont iconyuandian1"></image>
         </view>
       </view>
+      <!-- <slider activeColor="d33a31" block-size="12" backgroundColor="#dadada" value="{{play.percent}}" bindtap="sliderChange">
       <view>{{playlist[playIndex].duration}}</view>
+      </slider> -->
     </view>
 
   </view>

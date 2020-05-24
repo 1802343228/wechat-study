@@ -1,12 +1,10 @@
-// pages/index/playlist/playlist.js
-const API = require('../../../api')
+// pages/message/message.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    playlist:[]
 
   },
 
@@ -14,36 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    wx.request({
-      url: 'http://localhost:8080/song/list',
-      data:{},
-      header: {
-        'Content-Type':'application/json'
-      },
-      success:function(res) {
-        that.setData({
-          playlist:res.data.data
-        })
-        console.log(res.data.data)
-      }
-    })
-    var audioCtx = wx.createInnerAudioContext();
-    this.setData({
-      audioCtx:audioCtx
-    })
-    this.getBanner()
-  },
-  getBanner:function(){
-    API.getBanner({
-      type:2
-    }).then(res => {
-      if(res.code === 1) {
-        this.setData({
-          banner:res.banners
-        })
-      }
-    })
+
   },
 
   /**
@@ -93,7 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  change:function() {
   }
 })

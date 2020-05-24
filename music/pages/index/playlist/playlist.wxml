@@ -1,9 +1,11 @@
 <!--pages/index/playlist/playlist.wxml-->
 <view class='container'>
-  <block wx:for="{{playlist}}" wx:key="index">
-    <view class='text-content'>{{item.songName}}
+  <scroll-view class="content-playlist" scroll-y>
+<block wx:for="{{playlist}}" wx:key="index" class="playlist-item">
+    <view class='text-content' bindtap="change">{{item.songName}}
     <view></view>
     <text style="font-size:10px;">{{item.singer}}</text>
     </view> 
   </block>
+  </scroll-view>
 </view>
